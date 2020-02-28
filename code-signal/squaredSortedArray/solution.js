@@ -7,28 +7,28 @@
 	to fill an initialized array with the same length of the original array
 */
 const squaredSortedArray = arr => {
-	let result = new Array(arr.length), 
-		p1 = 0,
-		p2 = arr.length - 1
+  let result = new Array(arr.length),
+    p1 = 0,
+    p2 = arr.length - 1;
 
-	while (p1 <= p2) {
-		const s1 = square(arr[p1]), 
-			s2 = square(arr[p2])
+  while (p1 <= p2) {
+    const s1 = square(arr[p1]),
+      s2 = square(arr[p2]);
 
-		if (s1 > s2) {
-			result[p2 - p1] = s1
-			p1++
-		} else {
-			result[p2 - p1] = s2
-			p2--
-		}
-	}
+    if (s1 > s2) {
+      result[p2 - p1] = s1;
+      p1++;
+    } else {
+      result[p2 - p1] = s2;
+      p2--;
+    }
+  }
 
-	return result
-}
+  return result;
+};
 
-const square = num => num * num
+const square = num => num * num;
 
-module.exports = { 
-	squaredSortedArray
-}
+module.exports = {
+  squaredSortedArray
+};
