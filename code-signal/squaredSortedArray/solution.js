@@ -1,10 +1,10 @@
 /*
-	Given an array of sorted integers of x, where -1,000,000 <= x <= 1,000,000
-	return a sorted array of the square of each integer.
+  Given an array of sorted integers of x, where -1,000,000 <= x <= 1,000,000
+  return a sorted array of the square of each integer.
 
-	Solution implemented in O(n) using 2 pointers 
-	one iterating forwards (p1) and the other backwards (p2)
-	to fill an initialized array with the same length of the original array
+  Solution implemented in O(n) using 2 pointers 
+  one iterating forwards (p1) and the other backwards (p2)
+  to fill an initialized array with the same length of the original array
 */
 const squaredSortedArray = arr => {
   let result = new Array(arr.length),
