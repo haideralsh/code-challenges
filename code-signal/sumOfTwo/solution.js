@@ -1,10 +1,9 @@
 /*
-	Given two arrays of integers A and B and a integer value V, 
-	if a pair of integers from array A and another from array B add up to become V return true.
+    Given two arrays of integers A and B and an integer V, 
+    find out if a pair of integers from array A and another from array B add up to become V.
 
-	Solution sacrifices space complexity for a better time complexity by using a Hashset.
-	The solution is implemented in O(n) taking advantage of the fact that
-	HashSets have a constant lookup time.
+    Solution sacrifices space complexity for a better time complexity by using a Hashset.
+    Implemented in O(n) taking advantage of the fact that HashSets have a constant lookup time.
 */
 
 const sumOfTwo = (A, B, V) => {
