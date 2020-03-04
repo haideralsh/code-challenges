@@ -7,17 +7,15 @@
 */
 
 const sumOfTwo = (A, B, V) => {
-	const complements = new Set()
+  const complements = new Set();
 
-	A.map(number => complements.add(V - number))
+  A.map(number => complements.add(V - number));
 
-	for (number of B)
-		if (complements.has(number))
-			return true
+  for (number of B) if (complements.has(number)) return true;
 
-	return false
-}
+  return false;
+};
 
 module.exports = {
-	sumOfTwo
-}
+  sumOfTwo
+};

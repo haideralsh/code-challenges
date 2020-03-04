@@ -5,18 +5,18 @@
 */
 
 const countNegatives = matrix => {
-	if (matrix.length === 0) return 0
+  if (matrix.length === 0) return 0;
 
-	for (arr of matrix) 
-		return countNegativeNumbers(arr) + countNegatives(matrix.slice(1))
-}
+  for (arr of matrix)
+    return countNegativeNumbers(arr) + countNegatives(matrix.slice(1));
+};
 
 const countNegativeNumbers = sortedArr => {
-    if (sortedArr.length === 0 || sortedArr[sortedArr.length - 1] >= 0) return 0
-        
-	return 1 + countNegativeNumbers(sortedArr.slice(0, sortedArr.length - 1))
-}
+  if (sortedArr.length === 0 || sortedArr[sortedArr.length - 1] >= 0) return 0;
+
+  return 1 + countNegativeNumbers(sortedArr.slice(0, sortedArr.length - 1));
+};
 
 module.exports = {
-	countNegatives
-}
+  countNegatives
+};
