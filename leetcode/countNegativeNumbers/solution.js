@@ -4,19 +4,19 @@
 
 */
 
-const countNegatives = matrix => {
+const countNegativesInMatrix = matrix => {
   if (matrix.length === 0) return 0;
 
   for (arr of matrix)
-    return countNegativeNumbers(arr) + countNegatives(matrix.slice(1));
+    return countNegative(arr) + countNegativesInMatrix(matrix.slice(1));
 };
 
-const countNegativeNumbers = sortedArr => {
+const countNegative = sortedArr => {
   if (sortedArr.length === 0 || sortedArr[sortedArr.length - 1] >= 0) return 0;
 
-  return 1 + countNegativeNumbers(sortedArr.slice(0, sortedArr.length - 1));
+  return 1 + countNegative(sortedArr.slice(0, sortedArr.length - 1));
 };
 
 module.exports = {
-  countNegatives
+  countNegativesInMatrix
 };

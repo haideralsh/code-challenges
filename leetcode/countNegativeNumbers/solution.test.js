@@ -1,8 +1,8 @@
 const assert = require("assert").strict;
-const { countNegatives } = require("./solution");
+const { countNegativesInMatrix } = require("./solution");
 
 assert.deepStrictEqual(
-  countNegatives([
+  countNegativesInMatrix([
     [4, 3, 2, -1],
     [3, 2, 1, -1],
     [1, 1, -1, -2],
@@ -11,17 +11,17 @@ assert.deepStrictEqual(
   8
 );
 assert.deepStrictEqual(
-  countNegatives([
+  countNegativesInMatrix([
     [3, 2],
     [1, 0]
   ]),
   0
 );
 assert.deepStrictEqual(
-  countNegatives([
+  countNegativesInMatrix([
     [1, -1],
     [-1, -1]
   ]),
   3
 );
-assert.deepStrictEqual(countNegatives([[-1]]), 1);
+assert.deepStrictEqual(countNegativesInMatrix([[-1]]), 1);
