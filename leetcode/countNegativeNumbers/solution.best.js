@@ -1,6 +1,6 @@
 /*
-	Given a m * n matrix grid which is sorted in non-increasing order both row-wise and column-wise. 
-	Return the number of negative numbers in grid.
+  Given a m * n matrix grid which is sorted in non-increasing order both row-wise and column-wise. 
+  Return the number of negative numbers in grid.
   
   Time complexity: O(log(n))
   Uses a binary search algorithm taking advantage of the fact that the array is sorted.
