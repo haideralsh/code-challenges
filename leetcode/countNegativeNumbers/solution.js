@@ -1,12 +1,12 @@
 /*
-	Given a m * n matrix grid which is sorted in non-increasing order both row-wise and column-wise. 
-	Return the number of negative numbers in grid.
+  Given a m * n matrix grid which is sorted in non-increasing order both row-wise and column-wise. 
+  Return the number of negative numbers in grid.
 
   Leetcode output:
   Runtime: 72 ms, faster than 8.60% of JavaScript online submissions for Count Negative Numbers in a Sorted Matrix.
   Memory Usage: 41.4 MB, less than 100.00% of JavaScript online submissions for Count Negative Numbers in a Sorted Matrix.
 
-  See solution.best.js for the a better performing algorithm
+  See solution.best.js for a better performing algorithm
 */
 
 const countNegativesInMatrix = matrix => {
