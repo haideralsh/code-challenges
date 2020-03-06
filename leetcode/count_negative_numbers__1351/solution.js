@@ -1,8 +1,8 @@
 /*
   Given a m * n matrix grid which is sorted in non-increasing order both row-wise and column-wise. 
   Return the number of negative numbers in grid.
-
-  Leetcode output:
+  
+  Time complexity: O(n)
   Runtime: 72 ms, faster than 8.60% of JavaScript online submissions for Count Negative Numbers in a Sorted Matrix.
   Memory Usage: 41.4 MB, less than 100.00% of JavaScript online submissions for Count Negative Numbers in a Sorted Matrix.
 

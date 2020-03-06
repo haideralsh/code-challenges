@@ -4,8 +4,6 @@
   
   Time complexity: O(log(n))
   Uses a binary search algorithm taking advantage of the fact that the array is sorted.
-  
-  Leetcode output: 
   Runtime: 52 ms, faster than 92.05% of JavaScript online submissions for Count Negative Numbers in a Sorted Matrix.
   Memory Usage: 36.3 MB, less than 100.00% of JavaScript online submissions for Count Negative Numbers in a Sorted Matrix.
 */
