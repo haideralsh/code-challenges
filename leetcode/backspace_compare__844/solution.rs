@@ -2,7 +2,7 @@ fn backspace_compare(s: String, t: String) -> bool {
   return backspace(s) == backspace(t);
 }
 
-fn backspace(s: String) -> std::string::String {
+fn backspace(s: String) -> String {
   let mut vec = Vec::new();
 
   for c in s.chars() { 
