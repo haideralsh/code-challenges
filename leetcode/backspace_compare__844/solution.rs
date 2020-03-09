@@ -12,7 +12,12 @@ Memory Usage: 2.1 MB, less than 100.00% of Rust online submissions for Backspace
 //  assert_eq!(backspace_compare(String::from("bo#o#oee#"), String::from("##bn#oe")), true);
 // }  
 
-impl Solution {    
+impl Solution {
+    /// Returns true if the strings are the same ignoring the backspaces
+    ///
+    /// ```
+    /// assert_eq!(backspace_compare(String::from("bo#o#oee#"), String::from("##bn#oe")), true);
+    /// ```
     pub fn backspace_compare(s: String, t: String) -> bool {
       return Self::backspace(s) == Self::backspace(t);
     }
