@@ -23,13 +23,13 @@ impl Solution {
     }
 
     fn backspace(s: String) -> String {
-      let mut vec = Vec::new();
+      let mut backspaced = Vec::new();
 
       for c in s.chars() { 
         if c != '#' {
-          vec.push(c.to_string());
+          backspaced.push(c.to_string());
         } else {
-          vec.pop();
+          backspaced.pop();
         }
       }
 
